@@ -34,9 +34,7 @@ If you finished a feature and want to merge it into the develop branch, go to yo
 
 And so you finally changed the project :tada:
 
-
-
-## CSS:
+## CSS
 
 ```css
 text: text-decoration (none; underline), font-size (vw-height: percent, px, inherit)
