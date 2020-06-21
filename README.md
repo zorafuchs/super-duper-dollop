@@ -7,26 +7,26 @@ git flow feature start navigation
 
 Create a feature branch with `git flow`
 
-```
+```sh
 git flow feature start feature-name
 ```
 
 Push branch to GitHub first time
-```
+```sh
 git push -u origin feature/feature-name
 ```
 
 After you make changes on some files `commit` them
 
 
-```
+```sh
 git add . 
 git commit -m "Tell what you have been doing in this commit and what you have changed"
 ```
 
 Now you `push` changes to GitHub
 
-```
+```sh
 git push
 ```
 
@@ -36,7 +36,9 @@ And so you finally changed the project :tada:
 
 
 
-CSS:
+## CSS:
 
-text: text-decoration (none; underline), font-size (vw
-height: percent, px, inherit
+```css
+text: text-decoration (none; underline), font-size (vw-height: percent, px, inherit)
+
+```
