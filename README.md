@@ -41,9 +41,9 @@ text: text-decoration (none; underline), font-size (vw-height: percent, px, inhe
 
 ```
 
-
 ## OAUTH
 
+```mermaid
 sequenceDiagram
     participant User
     participant Client
@@ -62,3 +62,4 @@ sequenceDiagram
     Client->>ResourceServer: Request resource with access token
     ResourceServer->>Client: Return requested resource
     Client->>User: Display resource
+```
