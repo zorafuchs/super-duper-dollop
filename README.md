@@ -40,3 +40,25 @@ And so you finally changed the project :tada:
 text: text-decoration (none; underline), font-size (vw-height: percent, px, inherit)
 
 ```
+
+
+## OAUTH
+
+sequenceDiagram
+    participant User
+    participant Client
+    participant AuthorizationServer
+    participant ResourceServer
+
+    User->>Client: Initiates login
+    Client->>AuthorizationServer: Redirect to login page
+    AuthorizationServer->>User: Prompt for credentials
+    User->>AuthorizationServer: Submits credentials
+    AuthorizationServer->>User: Consent screen
+    User->>AuthorizationServer: Grants consent
+    AuthorizationServer->>Client: Redirect with authorization code
+    Client->>AuthorizationServer: Exchange code for access token
+    AuthorizationServer->>Client: Return access token
+    Client->>ResourceServer: Request resource with access token
+    ResourceServer->>Client: Return requested resource
+    Client->>User: Display resource
